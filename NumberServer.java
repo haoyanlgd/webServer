@@ -12,30 +12,18 @@ class Handler implements URLHandler {
     String retString = "";
 
     public String handleRequest(URI url) {
-        if (url.getPath().equals("/")) {
-            return String.format("Haoyan's Search Engine");
-        } else if (url.getPath().equals("/increment")) {
-            num += 1;
-            return String.format("Number incremented!");
-        }else if (url.getPath().equals("/search")){
-            String[] parameters = url.getQuery().split("=");
-                //if (parameters[0].equals("count")) {
-                //    num += Integer.parseInt(parameters[1]);
-                //    return String.format("Number increased by %s! It's now %s", parameters[1], num);
-                //}
-                //anser strings
-                if (parameters[0].equals("s")) {
-                    search = parameters[1];
-                    retString = "";
-                    for (String answer : answer_strings){
-                        if(answer.contains(search)){
-                            retString+= (answer + "\n");
-                        }
-                    }
-                    return String.format("Search results: %s", retString);
-                    }
+    if (url.getPath().equals("/")) {
+        retString = "";
+        num = 0;
+        for (String answer : answer_strings){
+            num ++;
+            retString+= (String.valueOf(num)+"." +" " +answer + "\n");
+            
+        }
+        return String.format("%s", retString);
+        
         }  else {
-            if (url.getPath().contains("/add")) {
+            if (url.getPath().contains("/add-message")) {
                 String[] parameters = url.getQuery().split("=");
                 //if (parameters[0].equals("count")) {
                 //    num += Integer.parseInt(parameters[1]);
