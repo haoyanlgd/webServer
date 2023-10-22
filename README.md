@@ -83,13 +83,13 @@ Results:
 
 
 Note:
-    Shows the immediate subdirectories or files that are in your current working directory. Without arguments it shows what files or directories are avalible in your current working directory. 
+    Shows the path files to the private and public keys. Also shows the login without a password.
 
 
 ## Part 3
 
 
 Summary:
-    It is not an error Instead, it waits for input from standard input (typically the keyboard). By default, without any arguments, cat reads from standard input. This means you can start typing directly into the terminal, and it will echo what you type after you press Enter. To exit the mode, simply press the keybind according to your operating system. 
+    I found out about how ssh works with public and private keys. I never thought about how they authenticated the logins but after these labs, I learned alot more about how public and private keys work. I can send the public key to the ssh and use my private key to login that no one else has. 
 
 
