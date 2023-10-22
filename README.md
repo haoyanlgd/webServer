@@ -78,7 +78,8 @@ Note:
 
 Results:    
     ![Image](path2private.png)
-    ![Image](path2pubic.png)
+    ![Image](path2public.png)
+    ![Image](loginnopass.png)
 
 
 Note:
@@ -87,16 +88,8 @@ Note:
 
 ## Part 3
 
-### Code:
-```
-    >[user@saharra ~/lecture1]cat
-    >asd
-    >asd
-```
-Results:    
-    ![Image](catnoarg.png)
 
-Note:
+Summary:
     It is not an error Instead, it waits for input from standard input (typically the keyboard). By default, without any arguments, cat reads from standard input. This means you can start typing directly into the terminal, and it will echo what you type after you press Enter. To exit the mode, simply press the keybind according to your operating system. 
 
 
