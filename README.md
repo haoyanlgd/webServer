@@ -65,8 +65,8 @@ class NumberServer {
 
 ```
 Results:    
-    ![Image](addmsg1.PNG)
-    ![Image](addmsg2.PNG)
+    ![Image](addmsg1.png)
+    ![Image](addmsg2.png)
 
 Note:
     The method handleRequest was called in my code. The relevant argument to that method is the url that is being called. The url contains the path and arguments from that path. IN this case the path would be towards the /add-message page and the arguments are given by ?s=argument. It will create a string array to cut up the arguments which will be used to identify what strings to store. It will then add the appropriate string to the arraylist answerStrings which is a field in this class that is used to store the messages. 
@@ -77,8 +77,8 @@ Note:
 
 
 Results:    
-    ![Image](path2private.PNG)
-    ![Image](path2pubic.PNG)
+    ![Image](path2private.png)
+    ![Image](path2pubic.png)
 
 
 Note:
@@ -94,7 +94,7 @@ Note:
     >asd
 ```
 Results:    
-    ![Image](catnoarg.PNG)
+    ![Image](catnoarg.png)
 
 Note:
     It is not an error Instead, it waits for input from standard input (typically the keyboard). By default, without any arguments, cat reads from standard input. This means you can start typing directly into the terminal, and it will echo what you type after you press Enter. To exit the mode, simply press the keybind according to your operating system. 
