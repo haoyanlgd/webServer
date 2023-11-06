@@ -66,10 +66,15 @@ class NumberServer {
 ```
 Results:    
     ![Image](addmsg1.png)
+
+Note:
+    The method handleRequest was called in my code. The relevant argument to that method is the url that is being called. The url contains the path and arguments from that path. IN this case the path would be towards the /add-message page and the arguments are given by ?s=hello. It will create a string array to cut up the arguments which will be used to identify what strings to store. It will then add the appropriate string to the arraylist answerStrings which is a field in this class that is used to store the messages.
+
+Results:
     ![Image](addmsg2.png)
 
 Note:
-    The method handleRequest was called in my code. The relevant argument to that method is the url that is being called. The url contains the path and arguments from that path. IN this case the path would be towards the /add-message page and the arguments are given by ?s=argument. It will create a string array to cut up the arguments which will be used to identify what strings to store. It will then add the appropriate string to the arraylist answerStrings which is a field in this class that is used to store the messages. 
+    The method handleRequest was called in my code. The relevant argument to that method is the url that is being called. The url contains the path and arguments from that path. IN this case the path would be towards the /add-message page and the arguments are given by ?s=How%20Are%20You. It will create a string array to cut up the arguments which will be used to identify what strings to store. It will then add the appropriate string to the arraylist answerStrings which is a field in this class that is used to store the messages. 
 
 
 
